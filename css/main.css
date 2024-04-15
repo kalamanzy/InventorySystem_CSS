@@ -1,0 +1,6 @@
+.bg-photo {
+    background-image: url('images/dhvsu.png'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh; 
+  }
