@@ -1,6 +1,16 @@
-.bg-photo {
-    background-image: url('images/dhvsu.png'); 
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh; 
-  }
+.index-body {
+  background-image: url('images/dhvsu.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  filter: blur(1px);  
+}
+
+.container-bg {
+  background-image: url('images/ccs1.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  padding: 20px; 
+  margin: 20px; 
+}
