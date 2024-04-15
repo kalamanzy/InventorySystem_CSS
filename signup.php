@@ -28,7 +28,7 @@
        top: 20%;
        left: 50%;
        transform: translateX(-50%);
-       z-index: 3;  
+       z-index: 3; 
        color: white; 
       }
 
@@ -51,6 +51,7 @@
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         width: 80%;
         max-width: 400px;
+        z-index: 4;
       }
 
       .form-container h2 {
@@ -66,46 +67,69 @@
       }
 
       .image-overlay {
-       position: absolute;
-       top: 2%;
-       right: 50%;
-       z-index: 1; 
-       filter: blur(1px);
+        position: absolute;
+        top: 2%;
+        right: 50%;
+        z-index: 1; 
+        filter: blur(1px);
       }
 
       .image-overlay img {
-       width: 1000px;  
-       height: auto; 
-       filter: blur(1px); 
+        width: 1000px;  
+        height: auto; 
+        filter: blur(1px); 
       }
-
     </style>
 </head>
 <body>
+
 <div class="container-h1">
    <h1>Inventory System</h1>
 </div>
 <div class="sign-up">
     <div class="form-container">
-        <h2>LOG IN</h2>
+        <h2>Sign Up</h2>
         <form>
             <div class="mb-3">
-                <label for="username" class="form-label">Username</label>
-                <input type="text" class="form-control" id="username" name="username" required>
+                <div class="d-flex justify-content-between">
+                  <div class="form-group">
+                     <label for="username" class="form-label">Username</label>
+                     <input type="text" class="form-control" id="username" name="username">
+                  </div>
+                  <div class="form-group">
+                     <label for="password" class="form-label">Password</label>
+                     <input type="password" class="form-control" id="password" name="password">
+                  </div>
+                </div>
             </div>
             <div class="mb-3">
-                <label for="password" class="form-label">Password</label>
-                <input type="password" class="form-control" id="password" name="password" required>
-                
+               <div class="d-flex justify-content-between">
+                  <div class="form-group">
+                    <label for="firstname" class="form-label">Firstname</label>
+                    <input type="text" class="form-control" id="firstname" name="firstname">
+                  </div>
+                   <div class="form-group">
+                     <label for="lastname" class="form-label">Lastname</label>
+                     <input type="text" class="form-control" id="lastname" name="lastname">
+                   </div>
+                </div>
             </div>
             <div class="mb-3">
-                <label for="confim-password" class="form-label">Confirm password</label>
-                <input type="password" class="form-control" id="confirm-password" name="confirm-password" required>
+                <div class="d-flex justify-content-between">
+                  <div class="form-group">
+                    <label for="middlename" class="form-label">Middlename</label>
+                    <input type="text" class="form-control" id="middlename" name="middlename">
+                  </div>
+                  <div class="form-group">
+                     <label for="position" class="form-label">Position</label>
+                     <input type="text" class="form-control" id="position" name="position">
+                  </div>
+                </div>
             </div>
-            <a href="dashboard.php" class="btn btn-primary">Log In</a>
-            <div class="mb-2 text-center">
-                <p>Don't have an account? <a href="signup.php">Sign up</a></p>
-            </div>
+            <a href="index.php" class="btn btn-primary">Sign In</a>
+          <div class="mb-2 text-center">
+            <p>Already have an account? <a href="index.php">login</a></p>
+          </div>
         </form>
     </div>
 </div>
