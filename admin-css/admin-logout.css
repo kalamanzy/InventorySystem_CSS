@@ -1,0 +1,54 @@
+@import url('bodycss.css');
+
+.main-dashboard .left .sidebar .logout {
+  background-color: var(--sidebar-color);
+}
+
+.container {
+  height: 300px;
+  width: 530px;
+  background-color: black;
+  margin: 60px auto;
+  border-radius: 5px;
+  background-image: linear-gradient(#124076, #000000);
+}
+
+.logout {
+  display: grid;
+  grid-template-rows: 100px 1fr;
+}
+
+.ask {
+  color: #fff;
+  font-size: 20px;
+  margin: 70px auto;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.yes, .no {
+  margin: 0 50px;
+}
+
+.yes {
+  padding: 15px;
+  background-color: var(--approve-color);
+  border-radius: 50%;
+  transition: all .15s;
+}
+
+.yes:hover,
+.no:hover {
+  opacity: .8;
+}
+
+.no {
+  padding: 15px;
+  background-color: var(--reject-color);
+  border-radius: 50%;
+  transition: all .15s;
+}

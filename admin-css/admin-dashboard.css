@@ -1,0 +1,95 @@
+@import url('bodycss.css');
+
+.main-dashboard .left .sidebar .dashboard {
+  background-color: var(--sidebar-color);
+}
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  justify-items: center;
+}
+
+.box {
+  position: relative;
+  height: 160px;
+  width: 300px;
+  background-color: var(--header-color);
+  border-radius: 4px;
+  color: white;
+  transition: all .25s;
+  box-shadow: 1px 2px 12px rgba(0, 0, 0, .25);
+
+  display: grid;
+  grid-template-rows: 50px 1fr;
+  align-items: center;  
+}
+
+.box:hover {
+  opacity: 0.8;
+}
+
+.box:nth-child(1)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../admin/icons/iconamoon--box-light.png');
+  opacity: .1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 150px 120px;
+}
+.top-box {
+  margin-left: 20px;
+  font-weight: 700;
+  font-size: 20px;
+}
+.body-box {
+  justify-self: center;
+  font-size: 50px;
+  margin-bottom: 25px;
+}
+
+.box:nth-child(2)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../admin/icons/carbon--white-paper.png');
+  opacity: .1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130px 100px;
+}
+
+.box:nth-child(3)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../admin/icons/mdi--user.png');
+  opacity: .1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 130px 100px;
+}
+
+.box:nth-child(4)::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url('../admin/icons/carbon--request-quote.png');
+  opacity: .1;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120px 90px;
+}

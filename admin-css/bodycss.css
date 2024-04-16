@@ -1,0 +1,31 @@
+:root {
+  --header-color: #124076;
+  --sidebar-color: #5F5C5C;
+  --sidebar-option-color: #444040;
+  --approve-color: #39BF17;
+  --reject-color: #FF0000;
+  --bg-color: #B5C0D0;
+  --first-row-color: #F2F2F2;
+  --sec-row-color: #ECF9FF;
+  --update-color: #F0E076;
+}
+
+.main-dashboard {
+  height: calc(100vh - 60px);
+  background-color: var(--bg-color);
+
+  display: grid;
+  grid-template-columns: 220px 1fr;
+}
+
+.right-body {
+  display: grid;
+  grid-template-rows: 50px 1fr;
+}
+
+.top-title {
+  font-weight: 500;
+  font-size: 24px;
+  align-self: center;
+  margin-left: 20px;
+}

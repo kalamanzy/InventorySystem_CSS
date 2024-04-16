@@ -1,0 +1,102 @@
+@import url('bodycss.css');
+
+.main-dashboard .left .sidebar .items {
+  background-color: var(--sidebar-color);
+}
+.container {
+  width: fit-content;
+  margin: 0 auto;
+}
+
+.top-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.add-item {
+  font-size: 14px;
+  margin: auto 100px;
+  display: inline-block;
+  padding: 9px 15px;
+  background-color: #ffffff;
+  color: black;
+  border-radius: 2px;
+  transition: all .15s;
+}
+
+.add-item:hover {
+  opacity: .7;
+}
+
+.table-content {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-radius: 4px;
+  background-color: var(--sec-row-color);
+  width: 1200px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}
+ 
+th {
+  font-weight: 700;
+  background-color: #124076;
+  color: #ffffff;
+  height: 40px;
+}
+
+td{
+  text-align: center;
+  height: 50px;
+}
+
+tr:nth-of-type(even) {
+  background-color: var(--first-row-color);
+}
+
+.upd {
+  display: inline-block;  
+  width: 50px;
+  background-color: var(--update-color);
+  padding: 6px 12px;
+  border-radius: 2px;
+  font-size: 14px;
+  transition: all .15s;
+  margin-right: 5px;
+}
+
+.rem {
+  isplay: inline-block;  
+  width: 50px;
+  background-color: var(--reject-color);
+  padding: 6px 12px;
+  border-radius: 2px;
+  transition: all .15s;
+  font-size: 14px;
+}
+
+.upd:hover,
+.rem:hover {
+  opacity: .7;
+}
+
+
+
+
+
+@media screen and (max-width: 1420px) and (min-width: 1220px) {
+  .table-content {
+    border-collapse: collapse;
+    background-color: var(--sec-row-color);
+    width: 1000px;
+  }
+}
+
+@media screen and (max-width: 1220px) and (min-width: 800px) {
+  .table-content {
+    border-collapse: collapse;
+    background-color: var(--sec-row-color);
+    width: 800px;
+  }
+}
+
+

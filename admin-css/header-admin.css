@@ -1,0 +1,35 @@
+:root {
+  --header-color: #124076;
+  --sidebar-color: #5F5C5C;
+  --sidebar-option-color: #444040;
+  --approve-color: #39BF17;
+  --reject-color: #FF0000;
+  --bg-color: #B5C0D0;
+  --first-row-color: #F2F2F2;
+  --sec-row-color: #ECF9FF;
+}
+
+.main {
+  background-color: var(--bg-color);
+  height: 60px;
+}
+
+.main .header {
+  height: 60px;
+  width: 100%;
+  background-color: var(--header-color);
+  position: fixed;
+  box-shadow: 4px 0 20px rgba(0, 0, 0, .25);
+
+  display: flex;
+  align-items: center;
+}
+
+.main .header .logo {
+  color: #fff;
+  font-weight: 700;
+  margin-left: 90px;
+  font-size: 24px;
+}
+
+

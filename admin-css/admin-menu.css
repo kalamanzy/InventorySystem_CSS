@@ -1,0 +1,37 @@
+:root {
+  --header-color: #124076;
+  --sidebar-color: #5F5C5C;
+  --sidebar-option-color: #444040;
+  --approve-color: #39BF17;
+  --reject-color: #FF0000;
+  --bg-color: #B5C0D0;
+  --first-row-color: #F2F2F2;
+  --sec-row-color: #ECF9FF;
+}
+.sidebar {
+  width: 220px;
+  height: 100%;
+  background: var(--sidebar-color);
+  position: fixed;
+}
+
+.sidebar a {
+  display: block;
+  height: 50px;
+  background-color: var(--sidebar-option-color);
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: all .15s;
+}
+
+.sidebar a:hover {
+  background-color: var(--sidebar-color);
+}
+
+.sidebar a img {
+  width: 30px;
+  height: 30px;
+  margin-left: 16px;
+  margin-right: 6px;
+}
