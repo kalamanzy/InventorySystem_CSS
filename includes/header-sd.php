@@ -3,28 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inventory System</title>
+    <title>Edit Profile</title>
 
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"/>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.min.css" rel="stylesheet"/>
-       
+    
     <style>
-        body, html {
-            height: 100%;
-            margin: 0;
-            font-family: 'Roboto', sans-serif;
-            overflow-x: hidden;
-        }
-
-        body {
-            background-image: url('images/dhvsu.png');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            position: relative;
-        }
-
         .navbar {
             display: flex;
             align-items: center;
@@ -37,7 +22,6 @@
             height: 50px;
             margin-left: 10px;
         }
-
         .navbar-sysname {
             color: white;
             text-decoration: none;  
@@ -63,25 +47,6 @@
             margin-left: 10px;
         }
 
-        .image-overlay {
-            position: absolute;
-            top: 10%;
-            left: 25%;
-            width: 100%;
-            height: 100%;
-            z-index: 1;
-        }
-
-        .image-overlay-bg {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 110%;
-            background-color: rgba(0, 100, 300, 0.5);  
-            z-index: 2;
-        }
-
         .image-overlay img {
             width: 900px;
             height: 900px;
@@ -93,20 +58,16 @@
 <body>
 <div class="navigation">
     <nav class="navbar sticky-top">
-        <img class="img-nav" src="images/ccs1.png" alt="ccs.png">
+        <img class="img-nav" src="../includes/images/ccs1.png" alt="ccs.png">
         <a class="navbar-sysname" href="sdashboard.php">DHVSU CCS Inventory System</a>
         <div class="navbar-links">
             <a class="navbar-home" href="">Home</a>
             <a class="navbar-request" href="">Request</a>
             <a class="navbar-inventory" href="">Inventory</a>
-            <img class="img-user" src="images/user.png" alt="user.png">
-            <img class="img-logout" src="images/logout.png" alt="logout.png">
+            <img class="img-user" src="../includes/images/user.png" alt="user.png">
+            <img class="img-logout" src="../includes/images/logout.png" alt="logout.png">
         </div>
     </nav>
-</div>
-<div class="image-overlay-bg"></div>
-<div class="image-overlay">
-    <img src="images/ccs1.png" alt="ccs.png">
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>

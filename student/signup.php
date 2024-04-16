@@ -17,7 +17,7 @@
       }
 
       body {
-        background-image: url('images/dhvsu.png');
+        background-image: url('../includes/images/dhvsu.png');
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -135,7 +135,7 @@
 </div>
 
 <div class="image-overlay">
-    <img src="images/ccs1.png" alt="ccs.png">
+    <img src="../includes/images/ccs1.png" alt="ccs.png">
 </div>
 
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/7.2.0/mdb.umd.min.js"></script>
